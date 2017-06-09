@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Bibliothek.Models
+namespace Bibliothek.DataAccess
 {
-    public class BookInformation
+    public class BookInformationData
     {
         [Key]
         public int ID { get; set; }
@@ -14,7 +14,7 @@ namespace Bibliothek.Models
         public string Description { get; set; }
         public string Position { get; set; }
         public int PublishingYear { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<BookData> Books { get; set; }
         public virtual ICollection<Author> Authors { get; set; }
     }
 

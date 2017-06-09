@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Bibliothek.Models
+namespace Bibliothek.DataAccess
 {
     public class Author
     {
@@ -13,7 +13,7 @@ namespace Bibliothek.Models
         public string Nation { get; set; }
         public bool IsAlive { get; set; }
         public bool HasNobelPrize { get; set; }
-        public virtual ICollection<BookInformation> BooksWritten { get; set; }
+        public virtual ICollection<BookInformationData> BooksWritten { get; set; }
 
     }
 }

@@ -2,22 +2,45 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using Bibliothek.DataAccess;
 
 namespace Bibliothek.Models
 {
-    public class Loan
+    public class Loan //Business logic class
     {
-        [Key]
-        public int ID { get; set; }
-        [Required]
-        public DateTime Start { get; set; }
-        [Required]
-        public DateTime End { get; set; }
-        public bool IsReturned { get; set; }
-     //   [ForeignKey("LoanTaker")]
-        public virtual LoanTaker LoanTaker { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
+        private LoanData data;
+        private Customer customer;
+        public int ID { get { return data.ID; } }
+        public DateTime Start { get { return data.Start; } }
+        public DateTime End { get { return data.End; } }
+        public bool IsReturned { get { return data.IsReturned; } }
+        public CustomerData Customer { get { return data.Customer; } }
+        public ICollection<Book> Books { get { return data.Books; } }
+
+        public Loan()
+        {
+            data = new LoanData();
+            customer = new Customer(data.Customer);
+        }
+
+        public Loan(LoanData loanData, Customer customer = null) //When loading from database
+        {
+            data = loanData;
+            if (customer == null)
+            {
+                this.customer = new Customer(data.Customer);
+            }
+            else
+            {
+                this.customer = customer;
+            }
+        }
+
+        public bool IsOpen { get; set; }
+
+        internal void AddBook(Book book)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

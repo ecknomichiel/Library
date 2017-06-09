@@ -183,12 +183,14 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Author.cs" />
-    <Compile Include="Models\Book.cs" />
-    <Compile Include="Models\BookInformation.cs" />
+    <Compile Include="DataAccess\Author.cs" />
+    <Compile Include="DataAccess\BookData.cs" />
+    <Compile Include="DataAccess\BookInformationData.cs" />
+    <Compile Include="Models\Library.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="DataAccess\LoanData.cs" />
+    <Compile Include="DataAccess\CustomerData.cs" />
     <Compile Include="Models\Loan.cs" />
-    <Compile Include="Models\LoanTaker.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
