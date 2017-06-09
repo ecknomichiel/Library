@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Bibliothek.Models.Book">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAgAAAAAAAAAAAAAEAAAAAAAAAEQAAAAA=</HashCode>
+      <FileName>Models\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliothek.Models.BookInformation">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAggEAgAAAAAAAAgABEAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\BookInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliothek.Models.Loan">
+    <Position X="8.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACAAACAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Loan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliothek.Models.LoanTaker">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAACAAAAAQAAAAAAAAAIAAAEAAAAAA=</HashCode>
+      <FileName>Models\LoanTaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bibliothek.Models.Author">
+    <Position X="5.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAACAAAgAAAAAAAAAQAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Models\Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
